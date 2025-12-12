@@ -65,9 +65,7 @@ export default function Admin() {
     `Cliente: ${customer.nome || '-'}%0A` +
     `Telefone: ${customer.telefone || '-'}%0A` +
     `Endereço: ${fullAddress}%0A` +
-    `Mapa: ${mapsLink}%0A%0A` +
-    `Itens:%0A${items}%0A%0A` +
-    `Total: R$ ${order.total ? Number(order.total).toFixed(2).replace('.', ',') : '0,00'}`;
+    `Mapa: ${mapsLink}%0A%0A` +;
 
   return body;
 };
